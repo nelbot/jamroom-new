@@ -1,0 +1,129 @@
+
+<div class="jumbotron center">
+	<h2>The fastest way to find local music shows</h2>
+
+		<p>
+			<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		</p>
+
+</div>
+
+    <head>
+  <title>Audio Player</title>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
+<div class="miami-page">
+  
+
+  <div class="row">
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://s3.amazonaws.com/miamiartist/sunghosts+logo.jpg" height="300" width="300">
+        <div class="caption">
+          <h2 style="text-align:center;">Sunghosts</h2>
+          <h4 style="text-align:center;">Til the City Goes Under</h4>
+          
+          <div class="audio-player">
+      
+      <audio id="audio-player" src="https://s3.amazonaws.com/jamroomtracks/1+Til+the+City+Goes+Under.wav" type="audio/mp3" controls="controls"></audio>
+</div>
+
+          <div class="info-for-show">
+            <p><dl class="dl-horizontal">
+            <dt>Venue</dt>
+            <dd>Mekka</dd>
+            <dt>Date</dt>
+            <dd>11/01/14</dd>
+            <dt>Time</dt>
+            <dd>10:00pm</dd>
+            <dt>Price</dt>
+            <dd>Free</dd>
+              </dl>
+            </p>
+          </div>
+          <p style="text-align:center;"><a href="#" class="btn btn-primary btn-lg btn-block" role="button">Get Tickets</a> </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://s3.amazonaws.com/miamiartist/astronautlogo300.png" height="300" width="300">
+        <div class="caption">
+          <h2 style="text-align:center;">Astronaut</h2>
+          <h4 style="text-align:center;">French Police</h4>
+          
+          <div class="audio-player">
+      
+      <audio id="audio-player" src="https://s3.amazonaws.com/jamroomtracks/1+Til+the+City+Goes+Under.wav" type="audio/mp3" controls="controls"></audio>
+</div>
+
+          <div class="info-for-show">
+            <p><dl class="dl-horizontal">
+            <dt>Venue</dt>
+            <dd>House Party</dd>
+            <dt>Date</dt>
+            <dd>10/31/14</dd>
+            <dt>Time</dt>
+            <dd>10:00pm</dd>
+            <dt>Price</dt>
+            <dd>Free</dd>
+              </dl>
+            </p>
+          </div>
+          <p style="text-align:center;"><a href="#" class="btn btn-primary btn-lg btn-block" role="button">Get Tickets</a> </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://s3.amazonaws.com/miamiartist/wilkesoswald300.png" height="300" width="300">
+        <div class="caption">
+          <h2 style="text-align:center;">Wilkes Oswald</h2>
+          <h4 style="text-align:center;">Southern Point</h4>
+          
+          <div class="audio-player">
+      
+      <audio id="audio-player" src="https://s3.amazonaws.com/jamroomtracks/1+Til+the+City+Goes+Under.wav" type="audio/mp3" controls="controls"></audio>
+</div>
+
+          <div class="info-for-show">
+            <p><dl class="dl-horizontal">
+            <dt>Venue</dt>
+            <dd>House Party</dd>
+            <dt>Date</dt>
+            <dd>10/31/14</dd>
+            <dt>Time</dt>
+            <dd>10:00pm</dd>
+            <dt>Price</dt>
+            <dd>Free</dd>
+              </dl>
+            </p>
+          </div>
+          <p style="text-align:center;"><a href="#" class="btn btn-primary btn-lg btn-block" role="button">Get Tickets</a> </p>
+        </div>
+      </div>
+    </div>
+<script>
+    $(document).ready(function() {
+        $('#audio-player').mediaelementplayer({
+            alwaysShowControls: true,
+            features: ['playpause','volume','progress'],
+            audioVolume: 'horizontal',
+            audioWidth: 400,
+            audioHeight: 120
+        });
+    });
+</script>
+</body>
+    
+
+
+</div>

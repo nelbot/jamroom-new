@@ -1,0 +1,34 @@
+$body-bg: 								#ffffff;
+$navbar-default-link-color:				#777777;
+$navbar-bg:								#ffffff;
+$navbar-default-link-hover-color:		#fc3f1f;
+$navbar-default-brand-hover-color:		#fc3f1f;
+$navbar-default-brand-color:			#fc3f1f;
+$brand-primary: 						#fc3f1f;
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-family: Backpack;
+	font-size: 35px;
+}
+
+.about-page {
+	text-align: center;
+}
+
+.Backpack { 
+	font-family: Backpack;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
